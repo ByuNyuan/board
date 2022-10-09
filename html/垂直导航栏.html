@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			margin: 8px 16px;
+			list-style: none;
+			width: 12%;
+			height: 100%;
+			border: solid 1px;
+			position: fixed;
+			overflow: auto;
+			background-color: #f1f1f1;
+		}
+		li
+		{
+			border-bottom: solid 1px;
+		}
+		li a
+		{
+			padding-left: 10px;
+			display: block;
+			text-align: left;
+			height: 50px;
+			line-height: 50px;
+			text-decoration: none;
+			color: black;
+		}
+		li a.active{
+			background-color: darkblue;
+			color: white;
+		}
+		li a:hover:not(.active){
+			background-color: greenyellow;
+			color:rgb(207, 48, 48);
+		}
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a class="active" href="#">主页</a></li>
+		<li><a href="#">新闻</a></li>
+		<li><a href="#">联系</a></li>
+		<li><a href="#">关于</a></li>
+	</ul>
+</body>
+</html>
